@@ -16,11 +16,9 @@ Tento dokument shrnuje body, ktere zatim nejsou definitivne uzavrene a bude potr
 
 ## Tresty
 
-- uplny seznam trestu
-- kdo muze udelit ktery trest
+- uplny seznam trestu (tabulka v 03 je zatim neuplna)
 - povolene rozsahy intenzit pro jednotlive tresty
 - presne chovani `NPC` pri volbe trestu
-- seznam domacich trestu rodicu
 
 ## Pochvaly
 
@@ -30,11 +28,8 @@ Tento dokument shrnuje body, ktere zatim nejsou definitivne uzavrene a bude potr
 
 ## Rodice
 
-- presne vlastnosti otce a matky
-- jak casto a jakymi zpusoby kontroluji:
-  - zakovskou knizku
-  - schovane veci
-  - bedtime
+- konkretni archetypy rodicu (jake archetypy existuji, jak se lisí)
+- jak casto a jakymi zpusoby rodice kontroluji zakovskou knizku
 - pravidla pro rozdeleni role mezi otcem a matkou
 
 ## Predmety a vyuka
@@ -65,6 +60,7 @@ Tento dokument shrnuje body, ktere zatim nejsou definitivne uzavrene a bude potr
   - informovani rodicu
   - schvaleni prosby
   - dvojiteho trestu od obou rodicu
+  - nahodneho prohledani inventare zaky
 
 ## Implementacni smer
 

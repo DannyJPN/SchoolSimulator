@@ -97,8 +97,14 @@ Zdroj informaci:
 - vysvedceni
 - poznamky
 - pozdni prichod domu
-- nalezeni schovanych predmetu
+- nalezeni schovanych predmetu (= nahodne prohledani inventare zaka)
 - nahodne informovani od ucitele
+
+Poznamky k detekci lzi a schovavani:
+
+- Rodice detekuji lez jen pres `konkretni dukaz` (knizka, svedek), ne nahodnou pravdepodobnosti.
+- Schovani veci = staci ji mit v inventari. Fyzicke skryse neexistuji — rodice prohledavaji primo inventar.
+- Prohledani inventare probiha `nahodne`, ne jen pri konkretni udalosti.
 
 Informace od ucitele:
 

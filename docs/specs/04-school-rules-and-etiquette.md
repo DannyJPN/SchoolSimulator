@@ -124,6 +124,9 @@ Skolni rad ma obsahovat jen `strucnou vetu`, ne detailni sazebnik trestu. Zamer:
 
 ### Oslovska lavice
 
-- Je samostatne misto ve tride.
+- Je samostatne misto ve tride — `separatni lavice pro jednoho`.
 - Zak na ni fyzicky prejde.
+- Zak musi mit na hlave `Dunce cap` (vizualni ponizeni).
+- Nelze na ni delat akce vyzadujici souseda (opisovani, sepskaní).
+- Poslani na oslovou lavici je trest = nastava `ihned po prohresku`, kdykoli behem hodiny.
 - Trest trva do konce hodiny, pokud ho ucitel nezrusi drive.

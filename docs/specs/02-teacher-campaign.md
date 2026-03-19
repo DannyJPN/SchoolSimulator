@@ -39,9 +39,10 @@
 - Hrac se k nemu muze `vracet a upravovat ho`.
 - Plan obsahuje hlavne:
   - co chce ucitel predat
-  - co chce po zácích vyzkouset
+  - co chce po zakoch vyzkouset
   - konkretni pripraveny obsah pro test/diktat/ukol
 - Nejde o povinny pevny scenar cele hodiny.
+- Pri priprave testu hra provede navrhy, ale `posledni slovo ma ucitel` — ucitel take definuje spravne odpovedi.
 
 ## Archiv
 
@@ -73,9 +74,13 @@
   - trestanim
   - chodenim po tride a dohledem
 - Zkousi jen `jednoho zaka najednou`.
-- Během zkouseni muze dynamicky menit obtiznost dalsich otazek.
+- Behem zkouseni muze dynamicky menit obtiznost dalsich otazek.
+- Ucitel muze provadet vyklad `z pripravenych materialu i freestyle` (oboji).
+- Pri zkouseni NPC zaka muze klast `pripravene i vlastnorucne napsane otazky` (oboji).
+- Opravovani pisemnych praci = `rucne hodnoceni` hracem-ucitelem.
+- Znamku za ustni zkouseni ucitel zadava `ihned` po zkouseni.
 
-## Dohled
+## Pohyb a dohled
 
 - Pro hrace-ucitele plati:
   - to, co vidi na obrazovce, je jeho realne `zorne pole`
@@ -83,11 +88,16 @@
 - Muze:
   - chodit po tride
   - stat na miste
+  - opustit tridu (na chodbu) behem hodiny
 - Oboji muze fungovat jako dohled.
 - Odhalovani podvadeni se ridí:
   - viditelnosti zaka
   - vzdalenosti od ucitele
 - Player-teacher nema dostavat skryte bonusy mimo to, co vidi.
+- Hra je z `treti osoby` — kamera a postava ucitele se mohou divat ruznymi smery.
+- Hrac-ucitel vidi to, co vidi kamera (ne nutne to, kam je otocena postava).
+- NPC ucitel ma zorne pole dane smerem otoceni postavy.
+- Pozde prichozi zak vstupuje `primo do probiha jici hodiny` (neceka na prestavku).
 
 ## Pozdní prichody
 
@@ -195,8 +205,33 @@
   - pozorovanim
   - oficialni evidenci
   - vlastni pameti
-- Hra nebude obsahovat soukromy zapisnik ucitele o jednotlivych zácích.
+- Hra nebude obsahovat soukromy zapisnik ucitele o jednotlivych zakach.
+- NPC ucitel vybira zaka ke zkouseni na zaklade `kombinace`: nahoda + vysledky + chovani.
+- NPC zaci se `zlepsují v prubehu kampane` v zavislosti na kvalite vyuky.
 
 ## Podminka selhani
 
-- Game over pro ucitele nastava, pokud `propadnou vsichni zaci`.
+- Game over pro ucitele nastava, pokud `propadnou vsichni zaci celkove` (ne jen z jednoho predmetu).
+
+## Konfiskace
+
+- Ucitel `muze zkonfiskovat predmet` z inventare zaka.
+- Konfiskovany tahak se vrati zaku po vyuce, pokud zak pride prosit.
+
+## Testy - prubeh
+
+- Ucitel musi testy fyzicky `rozdat kazdemu zakovi` (ne hromadny start).
+- Zak odevzdava praci `explicitni akci` (prinese list uciteli).
+- Zak muze odevzdat `drive nez uplyne cas`.
+- Po vyprsen casu `ucitel vyzve` zaka, pak teprve odebere.
+- NPC ucitel kontroluje domaci ukoly `automaticky` (bez pokynu hrace).
+- Diktat = ucitel diktuje `vetu po vete v realnem case`, zak pise pod casovym tlakem.
+- `Desetiminutovka` = test, pri nemz ucitel diktuje jednotlive otazky (podobne jako diktat, ale otazky ne text).
+- `Samostatna prace` = procvicovani (nizsi obtiznost, delsi trvani); nejde o test.
+- Hrac-ucitel muze pri testu `nahlednut do prace zaka`, pokud k nemu pristoupi blizko.
+- Stav spoluzaku (ochota opisovat apod.) zjistitelny jen `primym oslovenim` (zadne UI prehled).
+
+## Prestavka
+
+- Ucitel `nemusi dozorovat` prestavku.
+- Muze se plne venovat opravovani nebo priprave.

@@ -29,6 +29,14 @@ Poznamky:
   - pocetni priklady
   - jednoduche slovni ulohy
 
+## Upresnen i typu aktivit
+
+- `Diktat` = ucitel diktuje `vetu po vete v realnem case`; zak pise pod casovym tlakem.
+- `Desetiminutovka` = test, pri nemz ucitel diktuje jednotlive otazky (podobne jako diktat, ale otazky ne text).
+- `Samostatna prace` = procvicovani; nizsi obtiznost, delsi trvani. `Nejde o test` — je to prirazena cviceni, ktera zak vypracovava.
+- `Ustni zkouseni` pri tabuli je plnohodnotne zkouseni; kratka otazka u lavice je jine.
+- Zak ma na ustni odpoved `30 sekund` realneho casu.
+
 ## Zpusob vyhodnoceni
 
 - Doplňovani ma `jednu spravnou odpoved`.
@@ -129,7 +137,40 @@ Poznamky:
   - `duvod`
   - `typ trestu`
   - `intenzita`
-- Vetsi seznam trestu zatim neni uzavren.
+
+### Znamy seznam trestu od ucitele (NEUPLNY — NUTNO DOPLNIT)
+
+| Trest | Intenzita / varianty |
+|-------|---------------------|
+| Napomenuti | nizka kazenska vaha; nezapisuje se do zakovske knizky |
+| Poznamka | lze kombinovat s dalsim trestem |
+| Oslova lavice + Dunce cap | ihned po prohresku; do konce hodiny |
+| Zostani po skole | max 3 hodiny; muze byt prirazena cinnost |
+| Rakoska | mista: dlan, zadek, chodidla, konecky prstu; intenzita = pocet ran |
+| Facka | vzdy jen jedna; bez intenzity |
+| Vytahani za ucho | intenzita = delka trvani; lze pouzit k fyzickemu presunu zaka |
+| Tahani za vlasy | intenzita = delka trvani |
+| Kleceni | povrch: podlaha / hrach / trojhranne polenko / hrana stupinku; + delka + pozice pazí |
+| Stani v koutě | kombinovatelne s drzenim rukou v poloze |
+| Stani na stole/stolcce | ponizujici; vsichni vidi |
+| Drzeni rukou v poloze | nad hlavou / za zady; kombinovatelne s koutem |
+| Verejne doznanl | zak prizna prohresek nahlas pred tridou |
+| Napsana omluva | zak napise omluvu |
+| Opisovani vety | intenzita = pocet opakovani |
+| Trestny ukol | extra ukol nad ramec bezneho |
+| Poslani na chodbu | docasne vylouceni ze tridy |
+
+### Znamy seznam trestu od rodicu (NEUPLNY — NUTNO DOPLNIT)
+
+| Trest | Poznamka |
+|-------|----------|
+| Zakaz vychazek | ve hre = zkraceni cesty ze skoly domu na 20 minut |
+| Zprisneni bedtime | drive do postele (viz sekce Bedtime) |
+| Fyzicky trest (facka, rakoska aj.) | rodice mohou fyzicky trestat |
+
+**POZOR — SEZNAM NENI UZAVREN.**
+Uzivatel potvrdil, ze existuji dalsi tresty a varianty, ktere zatim nebyly popsany.
+Pred implementaci je nutne seznam doplnit v dalsim kole specifikace (viz 06-open-questions.md).
 
 ## Pochvaly
 
