@@ -938,6 +938,113 @@ Poznamky:
 - Žák může plnit jiný trest (poziční, písemný) nebo musí nečinně sedět v klasické školní poloze.
 - Čas plyne standardně.
 
+## Prošení o trest
+
+- Žák může prosit kdykoliv — před trestem i během něho.
+- NPC autoritu nezajímá, zda jde o hráče nebo NPC žáka.
+- Výchozí šance na zmírnění: `30 %`, kolísá podle kázně žáka a přísnosti autority.
+- Každá další prosba šanci snižuje.
+- Autorita trest za prošení nezpřísňuje.
+- Žák může prosit opakovaně bez pevného limitu, dokud mu není vyhověno.
+- Po úspěšném zmírnění žák prosit nemůže.
+- Zmírnění = ubrání ran / času / opakování.
+
+## Poděkování po trestu
+
+- Poděkování se říká jen po fyzických trestech (výprask, poziční trest, tělesné cvičení).
+- U nefyzických trestů se neděkuje — výjimka: učitel může přikázat žákovi připsat poděkování na konec každého opakování textu při písemném trestu.
+- Poděkování je vždy nahlas.
+- Žák musí vyslovit větu, která obsahuje:
+  - za co trest dostal
+  - o jaký trest šlo
+  - samotné poděkování
+- Žák se autoritě musí poklonit nebo podat ruku.
+- Dívky mohou místo toho udělat pukrle.
+- Volbu gesta (poklona / podání ruky / pukrle) dělá žák sám.
+- Na poděkování je `20 sekund`; nepoděkování je další přestupek.
+
+## Omluva
+
+- Žák se omlouvá tomu, vůči komu se provinil.
+- Omluva je vždy nahlas.
+- Žák musí vyslovit omluvu nebo prosbu o odpuštění — volná formulace je přípustná.
+- Při omlouvání se žák buď klaní (i dívky), nebo rukama prosí za odpuštění.
+- Autorita může omluvu přikázat jako součást jiného trestu.
+
+## Veřejné doznání — průběh
+
+- Žák musí nahlas říct větu, která obsahuje:
+  - název přestupku
+  - jméno a příjmení žáka (musí se představit)
+  - samotnou prosbu o odpuštění
+  - pokud dostal za daný přestupek i jiné tresty, musí o nich třídu informovat
+- Formulace může být volná, obsah je povinný.
+- Třída reaguje jednosměrně — jen poslouchá, nereaguje herně.
+
+## Písemný trest — průběh
+
+- Autorita zadá text, počet opakování, zda má žák podepisovat, a případně zda má připisovat poděkování.
+- Při plnění žák celou dobu vidí zadaný text, ale hra mu neumožňuje jej kopírovat.
+- Žák opisuje z klávesnice.
+- Překlep: věta se automaticky ukončí, vypíše se škrtnutě a nezapočítá se — žák musí větu napsat znovu.
+- Jedno opakování = celý zadaný text jednou (i vícevětný).
+- Žák píše, dokud nedokončí všechna opakování.
+- Výjimka: pokud píše po škole, platí časový limit; co nestihne, dopíše doma.
+
+## Trestný úkol — průběh
+
+- Žák plní trestný úkol stejně jako běžný domácí úkol.
+
+## Oblékání žáka při trestech
+
+- Výprask na zadek: žák zůstává oblečený (diskrétnost).
+- Výprask na chodidla: žák musí před trestem zout boty a ponožky.
+- Výprask na lýtka: žák musí před trestem vyhrnout nohavice.
+- Výprask na dlaně a konečky prstů: žák zůstává oblečený (ruce jsou standardně obnaženy).
+- Poziční tresty a tělesné cvičení: žák musí obnažit všechny části končetin, které se při daném cviku dotýkají země.
+  - Platí pro ruce i nohy.
+  - Příklady: kolena při klečení, dlaně a prsty nohou při klicích a planku, bosé nohy při cvicích s oporou o prsty.
+
+## Systém reakcí žáka při trestech
+
+- Reakce jsou definovány samostatně pro každý trest.
+- Reakce jsou kombinovatelné — žák může současně vykřiknout, mnout si ruku a prosit.
+- Reakce postupně zintenzivňují podle:
+  - počtu ran / délky trestu
+  - použitého nástroje
+  - místa zásahu
+  - pohlaví žáka
+  - věku žáka
+
+### Reakce při výprasku
+
+**Vokální / slovní:**
+- ostrý nádech nebo zasykání v momentu rány
+- potiché zasténání nebo záchvěv
+- výkřik nebo kňučení (zejména u mladších žáků)
+- tichý pláč až hlasité vzlykání
+- „au" / „ach" jako reflexní výkřik
+- prošení mezi ranami
+- sliby („už to neudělám")
+- hlasité počítání ran (pokud je přikázáno)
+
+**Fyzické:**
+- trhnutí zasaženou končetinou
+- podklesnutí kolen
+- napínání těla v očekávání rány
+- sáhnutí rukou k zasaženému místu (pokud to poloha umožní)
+- chvění rukou / nohou
+- stisknutí víček
+
+**Po každé ráně:**
+- třesení nebo masírování zasaženého místa
+- opatrný návrat do trestné polohy
+
+### Reakce při pozičním trestu a tělesném cvičení
+
+- Stejná logika jako u výprasku: reakce jsou kombinovatelné, postupně se zintenzivňují.
+- Konkrétní seznam reakcí se definuje samostatně pro každý trest (bude doplněno).
+
 ## Pochvaly
 
 - Pochvala je `jedna samostatna udalost`.
