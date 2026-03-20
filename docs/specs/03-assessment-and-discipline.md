@@ -1047,10 +1047,19 @@ Poznamky:
 
 ## Pochvaly
 
-- Pochvala je `jedna samostatna udalost`.
-- Nema intenzitu.
-- Ma vlastni pevny seznam duvodu.
-- Skolni pochvaly a domaci pochvaly maji oddelene seznamy duvodu.
+- Pochvala je jedna samostatná událost bez trvání — jednorázová akce.
+- Nemá intenzitu.
+- Může ji udělit `učitel` i `rodiče`.
+- Nesmí přijít během probíhajícího trestu.
+- Školní a domácí pochvaly mají oddělené seznamy důvodů; jinak se neliší.
+- Forma pochvaly:
+  - `verbální` — slovní pochvala
+  - `fyzická` — poplácání po zádech / rameni / temeni
+- Preference autority:
+  - učitel chválí zpravidla verbálně, nestojí-li přímo u žáka
+  - rodiče volí častěji fyzickou pochvalu
+  - nejde o pevné pravidlo, jen o preferenci
+- Reakce žáka: může, ale nemusí poděkovat (volně); zpravidla se usměje nebo začervená.
 
 ## Zname hodnotici systemy
 

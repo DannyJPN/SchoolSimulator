@@ -5,8 +5,8 @@ Po dokonceni skupiny se stav aktualizuje a commitne.
 
 ## Aktualne rozpracovano
 
-**Skupina: Pochvaly**
-- Soubor: `docs/specs/03-assessment-and-discipline.md`
+**Skupina: Archetypy rodičů**
+- Soubor: TBD
 - Stav: zahájeno
 
 ## Co uz je v teto vlne uzavreno
@@ -35,43 +35,30 @@ Po dokonceni skupiny se stav aktualizuje a commitne.
 - `kleceni`
 - `drep` jako vydrz
 - seznam trestnych `posilovacich cviku`
-- detailni provedeni:
-  - `drepy`
-  - `kliky`
-  - `leh-sedy`
-  - `zabaky`
-  - `anglicaky`
-  - `vyskoky`
-  - `vypady`
-  - `wall sit`
-  - `vystupy na stupinek`
-  - `plank`
-  - `bocni plank`
-  - `sklapovacky`
-  - `vzdavacky / surrenders`
-  - `kleky ze sedu na patach`
-- limity trestů (výprask, poziční trest, tělesné cvičení)
+- detailni provedeni všech trestných cvičení
+- limity trestů
 - kritické projevy nepřiměřenosti
 - kombinační pravidla
-- vizuální / gameplay průběh jednotlivých trestů
+- vizuální / gameplay průběh trestů
 - prošení o trest
-- poděkování — obecný protokol
-- omlouvání — obecný protokol
-- průběh nefyzických trestů (písemný trest, trestný úkol, veřejné doznání)
+- poděkování — protokol
+- omlouvání — protokol
+- průběh nefyzických trestů
 - oblékání žáka při trestech
-- systém reakcí žáka při trestech (obecná logika + výprask)
+- systém reakcí žáka při trestech
+- `pochvaly`
 
 ## Dalsi fronta skupin
 
-1. Pochvaly
-2. Archetypy rodicu
-3. Tabulka predmetu x rocnik x pololeti
-4. Etiketa
-5. Balanc
+1. Archetypy rodičů
+2. Tabulka předmětů x ročník x pololetí
+3. Etiketa
+4. Balanc
 
 ## Dokonceno
 
-- Tresty – fáze 3: prošení, poděkování, omluva, nefyzické tresty, oblékání, reakce (2026-03-20) - commit viz níže
-- Tresty – fáze 2: limity, kritické projevy, kombinace, gameplay průběh (Q23–Q43, 2026-03-20) - commit `2ce99e5`
+- Pochvaly (2026-03-20) - commit viz níže
+- Tresty – fáze 3 (2026-03-20) - commit `4c113b5`
+- Tresty – fáze 2 (2026-03-20) - commit `2ce99e5`
 - Funkcni doplneni specifikace (2026-03-19) - commit `88f6ad1`
 - Uvodni zalozeni a synchronizace repozitare - commit `8226dcf`
