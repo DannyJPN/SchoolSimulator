@@ -4,7 +4,7 @@
 
 - Finalni tabulka predmetu podle rocniku zatim neni uzavrena.
 - Mantinel:
-  - jen historicky dolozene predmety pro ceske zeme kolem roku `1900`
+  - jen historicky dolozene predmety pro ceske zeme kolem `1900`
   - vychozi obsah ma vychazet z `pruzkumu historickych pramenu`
   - sprava obsahovych sad ma byt mozna pres `textove soubory` a casem i `UI`
 
@@ -29,17 +29,17 @@ Poznamky:
   - pocetni priklady
   - jednoduche slovni ulohy
 
-## Upresnen i typu aktivit
+## Upresneni typu aktivit
 
 - `Diktat` = ucitel diktuje `vetu po vete v realnem case`; zak pise pod casovym tlakem.
-- `Desetiminutovka` = test, pri nemz ucitel diktuje jednotlive otazky (podobne jako diktat, ale otazky ne text).
-- `Samostatna prace` = procvicovani; nizsi obtiznost, delsi trvani. `Nejde o test` — je to prirazena cviceni, ktera zak vypracovava.
-- `Ustni zkouseni` pri tabuli je plnohodnotne zkouseni; kratka otazka u lavice je jine.
+- `Desetiminutovka` = test, pri nemz ucitel diktuje jednotlive otazky.
+- `Samostatna prace` = cviceni; nizsi obtiznost, delsi trvani. `Nejde o test`.
+- `Ustni zkouseni` pri tabuli je plnohodnotne zkouseni; kratka otazka u lavice je jiny pripad.
 - Zak ma na ustni odpoved `30 sekund` realneho casu.
 
 ## Zpusob vyhodnoceni
 
-- Doplňovani ma `jednu spravnou odpoved`.
+- Doplnovani ma `jednu spravnou odpoved`.
 - Neni tolerance preklepu.
 - Hrac muze pred odevzdanim mazat a upravovat text, ale odevzda `jen jednou`.
 - U pocetnich prikladu se sleduje:
@@ -99,7 +99,7 @@ Poznamky:
 - Hrac-zak vidi:
   - historii
   - ukazatel kazne v `0-100 %`
-- Kazeň se meni:
+- Kazen se meni:
   - prohresky
   - pochvalami
   - prijetim nebo odmitanim trestu
@@ -123,6 +123,27 @@ Poznamky:
   - historie kazne
 - Nezapisuje se do zakovske knizky.
 - Ovlivnuje navrh znamky z kazne.
+- Mohou ho udelit `ucitel` i `rodice`.
+
+## Poznamka
+
+- Je samostatny trest od `ucitele`.
+- Lze ji ulozit samostatne i v kombinaci s dalsim trestem.
+- Uklada:
+  - `pevny duvod`
+  - `text poznamky`
+- Hrac-ucitel muze text volne napsat.
+- NPC ucitel pouziva sablony.
+- Vaha je vyssi nez u napomenuti, ale nizsi nez u vetsiny fyzickych trestu.
+
+## Aktivni tresty
+
+- Prehled aktivnich trestu ma ukazovat:
+  - `typ trestu`
+  - `kdo ho ulozil`
+  - `zbyvajici dobu` nebo `termin`
+- `duvod` se ukazuje az v historii.
+- To plati i pro domaci tresty a skolni tresty s odlozenym splnenim.
 
 ## Tresty
 
@@ -133,44 +154,641 @@ Poznamky:
   - `oba`
 - Duvody trestu jsou z `pevneho seznamu`.
 - Duvod a trest nejsou napevno svazane.
-- Uklada se:
+- Kazda trestni udalost uklada:
   - `duvod`
   - `typ trestu`
-  - `intenzita`
+  - parametry konkretniho provedeni
 
-### Znamy seznam trestu od ucitele (NEUPLNY — NUTNO DOPLNIT)
+## Prehled typu trestu
 
-| Trest | Intenzita / varianty |
-|-------|---------------------|
-| Napomenuti | nizka kazenska vaha; nezapisuje se do zakovske knizky |
-| Poznamka | lze kombinovat s dalsim trestem |
-| Oslova lavice + Dunce cap | ihned po prohresku; do konce hodiny |
-| Zostani po skole | max 3 hodiny; muze byt prirazena cinnost |
-| Rakoska | mista: dlan, zadek, chodidla, konecky prstu; intenzita = pocet ran |
-| Facka | vzdy jen jedna; bez intenzity |
-| Vytahani za ucho | intenzita = delka trvani; lze pouzit k fyzickemu presunu zaka |
-| Tahani za vlasy | intenzita = delka trvani |
-| Kleceni | povrch: podlaha / hrach / trojhranne polenko / hrana stupinku; + delka + pozice pazí |
-| Stani v koutě | kombinovatelne s drzenim rukou v poloze |
-| Stani na stole/stolcce | ponizujici; vsichni vidi |
-| Drzeni rukou v poloze | nad hlavou / za zady; kombinovatelne s koutem |
-| Verejne doznanl | zak prizna prohresek nahlas pred tridou |
-| Napsana omluva | zak napise omluvu |
-| Opisovani vety | intenzita = pocet opakovani |
-| Trestny ukol | extra ukol nad ramec bezneho |
-| Poslani na chodbu | docasne vylouceni ze tridy |
+### Oba
 
-### Znamy seznam trestu od rodicu (NEUPLNY — NUTNO DOPLNIT)
+- `napomenuti`
+- `pozicni trest`
+- `vytahani za ucho`
+- `tahani za vlasy`
+- `vyprask`
+- `napsana omluva`
+- `telesne cviceni za trest`
 
-| Trest | Poznamka |
-|-------|----------|
-| Zakaz vychazek | ve hre = zkraceni cesty ze skoly domu na 20 minut |
-| Zprisneni bedtime | drive do postele (viz sekce Bedtime) |
-| Fyzicky trest (facka, rakoska aj.) | rodice mohou fyzicky trestat |
+### Jen ucitel
 
-**POZOR — SEZNAM NENI UZAVREN.**
-Uzivatel potvrdil, ze existuji dalsi tresty a varianty, ktere zatim nebyly popsany.
-Pred implementaci je nutne seznam doplnit v dalsim kole specifikace (viz 06-open-questions.md).
+- `poznamka`
+- `oslova lavice`
+- `zostani po skole`
+- `pisemny trest`
+- `trestny ukol`
+- `verejne doznani`
+- `poslani na chodbu`
+
+### Jen rodice
+
+- `facka`
+- `zakaz vychazek`
+- `zprisneni bedtime`
+
+## Oslova lavice
+
+- Je samostatny trest `jen od ucitele`.
+- Vzdy obsahuje `dunce cap`.
+- Ma jen parametr:
+  - `delka trvani`
+- Pouziva se jen `behem vyuky`.
+- Neni to jen parametr jineho trestu.
+
+## Dunce cap
+
+- Neni samostatny trest.
+- Je:
+  - povinnou soucasti `oslove lavice`
+  - volitelnym parametrem `pozicniho trestu`
+- U pozicniho trestu je dostupny jen:
+  - `uciteli`
+  - `behem vyuky`
+  - `ve tride`
+- Nepouziva se:
+  - na chodbe
+  - doma
+
+## Hanlivy napis / cedule
+
+- Neni samostatny trest.
+- Je volitelnym parametrem `pozicniho trestu`.
+- Je dostupny jen:
+  - `uciteli`
+  - `behem vyuky`
+  - `u pozicniho trestu`, ne u oslove lavice
+- Text muze byt:
+  - `pevna volba`
+  - `vlastni text` u hrace-ucitele
+- NPC ucitel pouziva jen pevne varianty.
+
+## Zostani po skole
+
+- Je trest `jen od ucitele`.
+- Muze trvat az `3 hodiny`.
+- Muze byt spojeno s dalsi cinnosti.
+
+## Pisemny trest
+
+- Je trest `jen od ucitele`.
+- Znamena `opisovani urceneho textu`.
+- Ma parametry:
+  - `text`
+  - `pocet opakovani`
+- Lze ho splnit:
+  - doma
+  - po skole
+
+## Trestny ukol
+
+- Je trest `jen od ucitele`.
+- Je to extra ukol nad ramec bezneho domaciho ukolu.
+- Vaze se na `konkretni predmet`.
+- Mohl by existovat soubezne s beznym ukolem i ve stejnem predmetu.
+- Vyhodnoceni je binarni:
+  - `splneno`
+  - `nesplneno`
+- Kdyz neni splnen:
+  - nasleduje dalsi trest
+  - automaticky se za nej nedava znamka
+
+## Verejne doznani
+
+- Je trest `jen od ucitele`.
+- Neni to forma omluvy.
+- Zak:
+  - nahlas prizna prohresek
+  - prosi tridu o prominuti
+- Muze byt zadano vice zakum, ale vykonava se `postupne`.
+- Pouziva se jen `behem vyuky`, ne po skole.
+
+## Napsana omluva
+
+- Mohou ji udelit `ucitel` i `rodice`.
+- Omluva smeruje:
+  - ke konkretni osobe
+  - nebo verejne, pokud neni cilova osoba konkretni
+- Rodice mohou narizovat omluvu i za skolni prohresek.
+- Kdyz se pise po skole, nemusi byt podepsana rodici.
+
+## Poslani na chodbu
+
+- Je trest `jen od ucitele`.
+- Je to zvlastni skolni varianta pozicniho trestu mimo tridu.
+- Zak stoji pod dohledem naproti dverim.
+- Je po dobu trestu vyloucen z vyuky a neporizuje si zapisky.
+- Trva maximalne do konce aktualni hodiny.
+- Muze se kombinovat s:
+  - pozicnim trestem
+  - poznamkou
+- Kdyz k nemu dojde behem testu nebo zkouseni:
+  - NPC ucitel da automaticky `5` jen tehdy, kdyz byla pricina `opisovani`
+  - jinak rozhoduje podle povahy situace
+
+## Zakaz vychazek
+
+- Je trest `jen od rodicu`.
+- Je casovy.
+- Parametr:
+  - `pocet dni`
+
+## Zprisneni bedtime
+
+- Je trest `jen od rodicu`.
+- Parametry:
+  - `konkretni drivejsi cas`
+  - `pocet dni`
+
+## Facka
+
+- Je trest `jen od rodicu`.
+- Vzdy jde o `jednu facku`.
+- Nema dalsi intenzitu.
+
+## Vytahani za ucho / tahani za vlasy
+
+- `Vytahani za ucho` a `tahani za vlasy` jsou samostatne tresty.
+- Mohou je udelit `ucitel` i `rodice`.
+- Jako trest maji parametr:
+  - `delka trvani`
+- Jejich pouziti se zapisuje samostatne do historie trestu.
+
+## Vedeni za ucho / vlasy
+
+- Neni to samostatny trest navic.
+- Je to `zpusob provedeni jineho trestu`.
+- Pouziva se, kdyz autorita sama zvolila trest a chce zaka fyzicky odvest.
+- Kdyz ma zak po rozhodnuti autority pravo si vybrat formu trestu a jit sam, `odvedeni se nepouzije`.
+- Kdyz zak neposlechne a nejde sam vykonat trest, muze ho autorita `dodatecne odvest za ucho / vlasy`.
+- Takove vedeni:
+  - ma nulovy samostatny dopad na kazen
+  - trva jen `do dosazeni mista trestu`
+
+## Vyprask
+
+- Je samostatny trest pro `ucitele` i `rodice`.
+- Parametry:
+  - `nastroj`
+  - `misto zasahu`
+  - `pocet ran`
+- Nepouziva se parametr sily.
+- Prubeh:
+  - nejprve `slovni oznameni trestu`
+  - pokud je treba, tak i `slovni prikaz k zaujmuti polohy`
+  - ukaznenejsi zak zaujme polohu automaticky
+  - neuposlechnuti je dalsi prohresek
+  - trest se nerusi, jen se `zprisni` nebo doplni dalsim trestem
+- Cyklus jedne rany:
+  - `rana`
+  - `autenticka reakce zaka`
+  - `navrat do trestne polohy`
+- `Dekovani` je az po posledni rane nebo po postaveni.
+- Za fyzicke tresty, pozicni tresty i telesne cviceni se na konci `dekuje`.
+- Na podekovani je `20 sekund`.
+- Nepodekovani je dalsi prohresek.
+- Pocitani ran:
+  - je volitelny prikaz
+  - mohou ho vyzadovat `ucitel` i `rodice`
+  - musi byt `nahlas`
+  - limit je `5 sekund` po kazde rane
+  - nezapocitana, preskocena nebo spatne vyslovena rana se `opakuje`
+- I u vyprasku existuji `kriticke projevy neprimerenosti`.
+- NPC autorita pri nich obvykle trest `ukonci`.
+
+## Pozicni trest
+
+- Je jeden sjednoceny trestni typ.
+- Mohou ho udelit `ucitel` i `rodice`.
+- Parametry:
+  - `druh pozice`
+  - `poloha pazi`
+  - `misto`
+  - `podklad`
+  - `drzeny predmet`
+  - `doba trvani`
+  - volitelne `dunce cap`, pokud to pravidla dovoluji
+  - volitelne `cedule / hanlivy napis`, pokud to pravidla dovoluji
+- Muze byt zadany:
+  - na pevny cas
+  - nebo `dokud autorita neuzna za vhodne`
+- Po uplynuti pevneho casu zak musi zustat v pozici, dokud autorita trest neskonci.
+- Spravne plneni muze zvysovat sanci, ze NPC autorita trest `zmirni` nebo `ukonci`.
+- Pri kritickych projevech pretizeni ma NPC autorita trest obvykle `ukoncit nebo zmirnit`.
+- Hrac-autorita dostava jen `diegeticke projevy` trestaneho zaka, ne UI varovani.
+
+## Zadani a kontrola pozicniho trestu
+
+- Zadani probiha ciste `slovne`.
+- Hra neukazuje tutorial ani vizualni nahled pozice.
+- Prubeh:
+  - `slovni zadani`
+  - `presun na misto`
+  - `zaujeti spravne pozice`
+  - `prubezna kontrola`
+- Spravne zaujmuti pozice kontroluje system `prubezne po celou dobu`.
+- Zak dostava jen `reakce autority`, ne samostatny indikator spravnosti.
+- Pri chybe:
+  - nejprve prijde `okamzite slovni napomenuti`
+  - NPC autorita kratce ceka na napravu
+  - pak muze trest `zprisnit`
+- Hrac-autorita muze pri pozicnim trestu volit:
+  - `cekat`
+  - `napomenout`
+  - `zprisnit`
+  - `ukoncit`
+
+## Smery otoceni
+
+- U `stani` i `kleceni` mohou varianty smerovat:
+  - `oblicejem do tridy`
+  - `oblicejem ke zdi / do kouta`
+- Rozdil je jen:
+  - `vizualni`
+  - `v zapisu`
+- Nema to zvlastni mechanicky dopad.
+
+## Druhy pozic
+
+### Stani
+
+- Zakladni varianty:
+  - `na zemi`
+  - `na stupinku`
+  - `na hrachu`
+- Dalsi varianta:
+  - `na jedne noze`
+- U stani na jedne noze stoji zak vzdy na `dominantni noze`.
+- Dominantni noha je `pevna vlastnost zaka`.
+
+### Kleceni
+
+- Vzdy `na obou kolenou`.
+- Trup je vzdy `vzprimeny`.
+- Podklady:
+  - `podlaha`
+  - `hrach`
+  - `varecka` doma
+  - `hrana stupinku`
+  - `trojhranne polinko`
+- Poradi tvrdosti:
+  - `podlaha < hrach < varecka < hrana stupinku < trojhranne polinko`
+
+### Drep
+
+- Jde o `vydrz`, ne opakovane drepy.
+- Je vzdy `na obou nohach`.
+- Muze byt:
+  - `na zemi`
+  - `na stupinku`
+  - `na hrachu`
+- U drepu:
+  - `stupinek` zvysuje hlavne `ponizeni`
+  - `hrach` zvysuje hlavne `bolest`
+
+## Podklady a jejich logika
+
+- U `kleceni` stupinek znamena `kleceni koleny na hrane`.
+- U `drepu` a `stani` stupinek znamena `cela chodidla nahore na stupinku`.
+- Proto:
+  - u `kleceni` stupinek zvysuje bolest
+  - u `stani` a `drepu` stupinek zvysuje hlavne ponizeni
+- U `stani` a `drepu` plati:
+  - `podlaha < stupinek < hrach`
+
+## Polohy pazi pro pozicni tresty
+
+- Tento seznam je uzavreny pro:
+  - `stani`
+  - `kleceni`
+  - `drep`
+
+### Ruce nad hlavou
+
+- `obe paze vzpazene rovne nahoru`
+- `ruce nad hlavou se sepnutymi dlanemi`
+- `ruce nad hlavou s drzenym predmetem`
+
+### Ruce za zady
+
+- `jedna ruka drzi druhe zapesti`
+- `obe ruce sepnute prsty za zady`
+- `ruce za zady zkrizene`
+- `jedna ruka drzi druhou za nadlokti`
+
+### Predpazeni
+
+- `obe paze rovne pred sebe, dlane dolu, prsty natazene`
+- muze byt i `s drzenym predmetem`
+
+### Upazeni
+
+- `obe paze vodorovne do stran`
+- bez predmetu jsou `dlane dolu`
+- s predmety jsou `dlane nahoru`
+
+### Dalsi polohy
+
+- `ruce podel tela`
+- `ruce za hlavou s propletenymi prsty`
+
+## Drzene predmety u pozicniho trestu
+
+- Drzene predmety jsou samostatny parametr tam, kde to poloha pazi dovoluje.
+- Zatim je potvrzeno:
+  - `kniha`
+- Jine predmety se doplni pozdeji.
+
+### Kniha nad hlavou
+
+- Kniha lezi `na otevrenych dlanich otocenych nahoru`.
+- Zak ji `nesmi pridrzovat palcem`.
+- `Pridrzovani palcem` je poruseni trestu.
+- `Upadnuti knihy` je poruseni trestu.
+
+### Kniha v predpazeni
+
+- Kniha lezi `na predloktich`.
+- Nemuze byt fyzicky polozena do dlani.
+- Muze unavou pomalu sjizdet smerem k prstum.
+- Samotne sjizdeni jeste neni prohresek.
+- `Spadnuti knihy` je prohresek.
+
+### Kniha v upazeni
+
+- Jsou `dve knihy`, jedna na kazdou ruku.
+- Dlne jsou `otocene nahoru`.
+- Spadnuti jedne knihy je `poruseni trestu`.
+
+## Telesne cviceni za trest
+
+- Je samostatny trest pro `ucitele` i `rodice`.
+- Jeden trest je vzdy `jeden cvik`.
+- Nelze zadat jeden telesny trest jako serii vice cviku.
+- Nelze zadat vice samostatnych telesnych trestu za sebou jen kvuli kombinaci cviku.
+- Mimo `beh kolecek` v telesne vychove je sada cviku stejna napric autoritami.
+- Vyrazne ne-posilovaci cviky se jako trest nepouzivaji.
+- Vyrazene cviky ale mohou byt beznou soucasti radne vyuky telesne vychovy.
+
+## Zadani telesneho trestu
+
+- Autorita muze zadat:
+  - `pocet opakovani`, pokud to u cviku dava smysl
+  - `cas`
+- `Pocet` a `cas` se nekombinuji v jednom zadani.
+- Kdyz je zadan `pocet opakovani`:
+  - zak musi cvik splnit v limitu `5 sekund x pocet opakovani`
+- Kdyz je zadan `cas`:
+  - zak musi cvicit `bez prestavky` po celou dobu
+- Zastaveni nebo delsi pauza behem casove zadaneho cviku je `poruseni / nesplneni`.
+- Spatne provedene opakovani se `nezapocita` a musi se opakovat.
+- Kazdy cvik potrebuje vlastni presnou definici `spravneho provedeni`.
+
+## Seznam posilovacich cviku za trest
+
+- `drepy`
+- `kliky`
+- `leh-sedy`
+- `zabaky`
+- `anglicaky`
+- `vyskoky`
+- `vypady`
+- `plank`
+- `bocni plank`
+- `wall sit`
+- `vystupy na stupinek`
+- `sklapovacky`
+- `vzdavacky / surrenders`
+- `kleky ze sedu na patach`
+- specialni varianta v `telesne vychove`: `beh kolecek po telocvicne`
+
+## Vyrazene cviky jako trest
+
+- `beh na miste`
+- `skakani panaka / jumping jack`
+- `svihadlo`
+- `svihadlo bez svihadla`
+- `plazeni / lezeni po ctyrech`
+- `medvedi chuze`
+- `horolezec`
+- `nuzky vleze`
+- `superman`
+- `zvedani nohou vleze`
+- `pritahovani kolen k hrudi vestoje`
+- `vydrz v predklonu / dotykani spicek`
+- `most`
+- `shyb na hrazde`
+- `dips o lavici`
+- `vypony na spicky`
+- `sedy-lehy se zvednutyma nohama`
+- `staticky klik ve spod ni pozici`
+- `wall push-up`
+- `jumping squat`
+- `preskakovani lavicky / prekazky`
+- `splh na tyci`
+- `splh po lane`
+- `splh po zebrinach`
+- `stojka u zdi`
+
+## Beh kolecek v telesne vychove
+
+- Je to zvlastni varianta trestu jen pro `vyuku telocviku`.
+- Zadava se:
+  - `poctem kol`
+  - nebo `casem`
+
+## Drepy jako cvik
+
+- Opakovani se zapocita jen tehdy, kdyz:
+  - stehna jdou `zhruba do vodorovna`
+  - zak se vrati do `plneho vzpr imeneho stoje`
+  - chodidla zustanou `na zemi`
+- Pov olene polohy rukou:
+  - `ruce za hlavou s propletenymi prsty`
+  - `ruce nad hlavou`
+  - `predpazeni`
+  - `upazeni`
+  - `sepjate ruce pred hrudi`
+
+## Kliky
+
+- Opakovani se zapocita jen tehdy, kdyz:
+  - lokty jdou aspon priblizne do `praveho uhlu`
+  - `hrudnik` se dotkne zeme
+  - zak se vrati do `plne propnutych pazi`
+- Trup musi zustat `rovny`.
+- Hlava je v `prodlouzeni trupu`.
+- Dlne jsou `2x sirka ramen`.
+- Lokty smeruji `do stran`.
+- Prsty rukou smeruji `dopredu`.
+- Naho re je dovolena pauza max `5 sekund`; delsi pauza znamena nezapocitani opakovani.
+
+### Normalni kliky
+
+- Vychozi varianta pro `kluky`.
+- Nohy jsou `rovne`.
+- Opora je o `prsty nohou`.
+- Cele nohy musi byt `stisknute pri sobe`.
+- Polozeni kolen na zem je:
+  - `prohresek`
+  - opakovani se `nezapocita`
+
+### Kliky na kolenou
+
+- Vychozi varianta pro `divky`.
+- Lze je prikazat i `klukovi` jako ponizujici variantu.
+- Lze naopak `divce` prikazat normalni kliky jako tezsi variantu.
+- Zak kleci na kolenou.
+- Chodidla jsou `zvednuta a zkrizena`.
+- `Dominantni noha` je dole.
+- Chodidla se nesmi dotknout zeme:
+  - jinak jde o `prohresek`
+  - opakovani se `nezapocita`
+
+## Leh-sedy
+
+- Opakovani se zapocita jen tehdy, kdyz:
+  - se `lokty dotknou kolen`
+  - zak se vrati `lopatkami na zem`
+- Ruce jsou `za hlavou s propletenymi prsty`.
+- Nohy jsou `pokrcene`.
+- Chodidla jsou `na zemi`.
+- Nohy musi byt `stisknute pri sobe`.
+- Kolena se nesmi rozjizdet od sebe.
+- Zak si nesmi `pritahovat hlavu rukama`.
+- Kontrola smeruje hlavne na:
+  - `lokty rozevrene`
+  - `netahani hlavy dopredu`
+- Trestany zak muze jit prosit nekoho o drzeni chodidel:
+  - pokud neni trestan sam, muze prosit jen `jineho delikventa`
+  - delikvent musi se souhlasem pomoci
+  - netrestany zak muze prosbu `odmitnout`
+  - autorita pomoc nena rizuje, zak si o ni rika sam
+- Kdyz nikdo nepomuze, zak musi cvik zvladnout i `bez pomoci`.
+
+## Zabaky
+
+- Cvik je `skok z drepu dopredu zpet do drepu`.
+- Opakovani se zapocita jen tehdy, kdyz:
+  - odraz je `obema nohama soucasne`
+  - dopad je `obema nohama soucasne`
+  - zak dopadne `stabilne zpet do drepu`
+  - nespadne
+- Nemusi se po doskoku uplne narovnat.
+- Varianty rukou:
+  - `volne`
+  - `za hlavou` jako prisnejsi verze
+
+## Anglicaky
+
+- Jde o slozeny cvik z:
+  - `drepu / prechodu do drepu`
+  - `kliku`
+  - `vyskoku`
+- Jednotlive casti musi kopirovat podminky dilcich cviku.
+- Opakovani se zapocita jen tehdy, kdyz:
+  - dole jde `hrudnik na zem`
+  - nohy jdou do vzporu `soucasne`
+  - nohy se vraceji zpet `soucasne`
+  - po navratu nahoru prijde `vyskok`
+  - pri vyskoku prijde i `tlesknuti nad hlavou`
+  - zak se vrati do `plneho vzpr imeneho stoje`
+- Polozeni kolen na zem znamena:
+  - opakovani se `nezapocita`
+- Dlne jsou `2x sirka ramen`.
+- Lokty smeruji `do stran`.
+- Trup je `rovny`.
+- Hlava je v `prodlouzeni trupu`.
+- Prsty rukou smeruji `dopredu`.
+
+## Vyskoky
+
+- Opakovani se zapocita jen tehdy, kdyz:
+  - se `obe paty dotknou hyzdi`
+  - dotek je `oboustranny zaroven`
+  - dopad je `obema nohama soucasne`
+  - zak se vrati do `stabilniho stoje`
+- Kdyz se paty jen tesne nedotknou, opakovani se `nezapocita`.
+- Ruce mohou pri odrazu pomahat `volne`.
+
+## Vypady
+
+- Opakovani se zapocita jen tehdy, kdyz:
+  - zak pri kazde strane `klekne necvicici nohou na zem`
+  - pak se vrati do `plneho vzpr imeneho stoje`
+- Jedno opakovani se pocita az po `obou stranach`.
+- Vzdy se cvici `stridave`.
+- Povolene polohy rukou:
+  - `za hlavou s propletenymi prsty`
+  - `ruce nad hlavou`
+  - `upazeni`
+  - `sepjate ruce pred hrudi`
+
+## Wall sit
+
+- Je to `izometricky drep u zdi`.
+- Pocita se jako `jeden cvik`, ne jako zvlaste pojmenovana varianta navic.
+- Spravne provedeni:
+  - stehna `zhruba vodorovne`
+  - kolena v `pravem uhlu`
+  - zada `oprena o zed`
+  - chodidla `celou plochou na zemi`
+- Povolene polohy rukou:
+  - `za hlavou s propletenymi prsty`
+  - `ruce nad hlavou`
+  - `predpazeni`, i `s drzenymi predmety`
+  - `upazeni`, i `s drzenymi predmety`
+  - `sepjate ruce pred hrudi`
+  - `ruce podel tela s dlanemi tlacenymi do zdi`
+  - `dlane polozene na kolenou` u mirnejsi verze nebo v telocviku
+- Kdyz pri upazeni zak nic nedrzi, `tlaci dlanemi do steny`.
+
+## Vystupy na stupinek
+
+- Opakovani se zapocita jen tehdy, kdyz:
+  - zak `obema nohama vystoupi nahoru`
+  - nahore se `plne narovna`
+  - pak zase `sestoupi dolu`
+- Jedno opakovani se pocita az po `obou stranach`.
+- Povolene polohy rukou:
+  - `za hlavou s propletenymi prsty`
+  - `sepjate ruce pred hrudi`
+  - `volne ruce`, u mirnejsi verze ve stylu `behu na miste`
+
+## Plank
+
+- Pouziva se jen varianta `na loktech`.
+- Nohy jsou `u sebe`.
+- Kolena se po celou dobu `nesmi dotknout zeme`.
+- Trup musi zustat `uplne rovny`.
+- Hlava je v `prodlouzeni trupu`.
+- Lokty jsou `presne pod rameny`.
+
+## Bocni plank
+
+- Je potvrzen jako trestny cvik.
+- Vzdy se cvici `na obe strany`.
+- Detailni podminky provedeni jeste nejsou rozepsane.
+
+## Sklapovacky
+
+- Jsou potvrzeny jako trestny cvik.
+- Detailni podminky provedeni jeste nejsou rozepsane.
+
+## Vzdavacky / surrenders
+
+- Jsou potvrzeny jako trestny cvik.
+- Cvik:
+  - `ruce za hlavou`
+  - prechod `ze stoje do kleku a zpet`
+- Detailni podminky provedeni jeste nejsou rozepsane.
+
+## Kleky ze sedu na patach
+
+- Jsou potvrzeny jako trestny cvik.
+- Cvik:
+  - prechod `ze sedu na patach do vzpr imeneho kleku a zpet`
+- Detailni podminky provedeni jeste nejsou rozepsane.
 
 ## Pochvaly
 
@@ -192,7 +810,7 @@ Pred implementaci je nutne seznam doplnit v dalsim kole specifikace (viz 06-open
 - Pozdni prichod se pro evidenci prevadi na zameskanou `celou hodinu`.
 - Pro trest a prubeh se navic sleduji `realne minuty`.
 - Omluvenka je jen `jeden typ`.
-- Kryje `zameškane hodiny`.
+- Kryje `zameskane hodiny`.
 - Nepodepsana omluvenka = zadna omluvenka.
 - Hrac-ucitel muze nekompletni omluvenku uznat.
 - NPC ucitel ji neuzna.
