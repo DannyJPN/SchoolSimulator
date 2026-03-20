@@ -5,15 +5,9 @@ Po dokonceni skupiny se stav aktualizuje a commitne.
 
 ## Aktualne rozpracovano
 
-**Skupina: Tresty**
+**Skupina: Tresty – fáze 3**
 - Soubor: `docs/specs/03-assessment-and-discipline.md`
-- Fokus: `telesne cviceni za trest` a detailni podminky spravneho provedeni jednotlivych cviku
-- Stav:
-  - zapsany sjednoceny prehled trestu
-  - dopsane detailni provedeni `pozicnich trestu`
-  - dopsane detailni provedeni `vyprasku`
-  - dopsane zadavani `telesnych cviku za trest`
-  - rozpracovane detailni provedeni jednotlivych cviku
+- Stav: zahájeno, otevřená témata viz fronta níže
 
 ## Co uz je v teto vlne uzavreno
 
@@ -51,24 +45,26 @@ Po dokonceni skupiny se stav aktualizuje a commitne.
   - `vypady`
   - `wall sit`
   - `vystupy na stupinek`
-  - zaklad `planku`
+  - `plank`
+  - `bocni plank`
+  - `sklapovacky`
+  - `vzdavacky / surrenders`
+  - `kleky ze sedu na patach`
+- limity trestů (výprask, poziční trest, tělesné cvičení)
+- kritické projevy nepřiměřenosti
+- kombinační pravidla
+- vizuální / gameplay průběh jednotlivých trestů
 
-## Presny navazujici checkpoint
+## Fronta faze 3 (otevřená témata v sekci trestů)
 
-Pristi otazka ma navazat tady:
+1. Prošení o trest (žák prosí o zmírnění nebo odpuštění)
+2. Děkování — obecný protokol (nejen po výprasku)
+3. Omlouvání — obecný protokol
+4. Průběh nefyzických trestů (písemný trest, trestný úkol, veřejné doznání)
+5. Oblékání žáka (co má na sobě při různých trestech)
+6. Konkrétní reakce při trestech (pláč, prosení, vzlykání — systém reakcí)
 
-`Další otázka: mají být při planku předloktí vedená rovnoběžně dopředu, nebo mohou být i ruce sepjaté?`
-
-## Dalsi pravdepodobny sled otazek po planku
-
-1. Dopsat zbytek detailu `planku`.
-2. Dopsat detailni provedeni `bocniho planku`.
-3. Dopsat detailni provedeni `sklapovacek`.
-4. Dopsat detailni provedeni `vzdavacek / surrenders`.
-5. Dopsat detailni provedeni `kleku ze sedu na patach`.
-6. Nakonec zkontrolovat, zda je tim cast `telesne cviceni za trest` uzavrena.
-
-## Fronta dalsich skupin
+## Dalsi fronta skupin
 
 1. Pochvaly
 2. Archetypy rodicu
@@ -78,5 +74,6 @@ Pristi otazka ma navazat tady:
 
 ## Dokonceno
 
+- Tresty – fáze 2: limity, kritické projevy, kombinace, gameplay průběh (Q23–Q43, 2026-03-20) - commit viz níže
 - Funkcni doplneni specifikace (2026-03-19) - commit `88f6ad1`
 - Uvodni zalozeni a synchronizace repozitare - commit `8226dcf`

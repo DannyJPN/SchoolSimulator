@@ -228,6 +228,9 @@ Poznamky:
 - Je trest `jen od ucitele`.
 - Muze trvat az `3 hodiny`.
 - Muze byt spojeno s dalsi cinnosti.
+- Povolene cinnosti behem zostani:
+  - `pisemny trest`
+  - `pozicni trest`
 
 ## Pisemny trest
 
@@ -332,6 +335,47 @@ Poznamky:
   - `nastroj`
   - `misto zasahu`
   - `pocet ran`
+- Povolene nastroje:
+  - `rakoska` (= ukazovátko) — ucitel i rodice
+  - `pravitko` — jen ucitel
+  - `opasek` — ucitel i rodice
+  - `ruka` — jen rodice
+  - `varecka` — jen rodice
+- Povolena mista zasahu:
+  - `dlan`
+  - `zadek`
+  - `chodidla`
+  - `konecky prstu`
+  - `lytka`
+- Omezeni kombinaci nastroj x misto:
+  - `ruka` — pouze `zadek`
+  - `opasek` — ne `konecky prstu`
+  - ostatni kombinace jsou libovolne
+- Skupiny nastroju podle delky:
+  - `kratke` (primý kontakt): `ruka`
+  - `stredni`: `pravitko`, `varecka`, `opasek`
+  - `dlouhe` (vyzaduje vic prostoru): `rakoska`
+- Trestna poloha — `zadek`:
+  - `pres kolena autority` — jen kratke a stredni nastroje, ne rakoska
+  - `pres stul / lavici` — vsechny nastroje
+  - `ke zdi, opren rukama` — vsechny nastroje
+  - `ve stoji, ruce za hlavou, predklon` — vsechny nastroje
+- Trestna poloha — `chodidla`:
+  - `klec na zidli, nohy pres okraj` — skola i doma
+  - `sed na zidli, nohy na stul` — skola i doma
+  - `lezi na pohovce na brisu, nohy zvednute` — jen doma
+  - poznamka: ve skole je ucitelova zidle posunuta na stupinek uprostred pred tabuli
+- Trestna poloha — `lytka`:
+  - `vestoje na zidli` — skola i doma
+- Trestna poloha — `konecky prstu`:
+  - `na rukach` — stejna poloha jako u `dlan`; misto otevrene dlane zak nastaví prsty do `hrusticka` (prsty stisnute do spicku)
+  - `na nohach` — stejna poloha jako u `chodidla`
+- Trestna poloha — `dlan`:
+  - zak stoji `celem k autorite` a diva se ji do oci
+  - jedna ruka lezi `dalni na dlani`, obe plne natazene pred sebou
+  - neni to drzeni za loket — opora je ciste `dlan na dlan`
+  - po kazde rane zak `vymeni ruce` — trestana ruka jde dolu jako opora, druha nahoru
+  - rany tak dostavaji obe ruce stridate
 - Nepouziva se parametr sily.
 - Prubeh:
   - nejprve `slovni oznameni trestu`
@@ -763,32 +807,136 @@ Poznamky:
 - Trup musi zustat `uplne rovny`.
 - Hlava je v `prodlouzeni trupu`.
 - Lokty jsou `presne pod rameny`.
+- Poloha predlokti:
+  - `predlokti rovnobezne dopredu`
+  - nebo `ruce sepjate`
 
 ## Bocni plank
 
 - Je potvrzen jako trestny cvik.
 - Vzdy se cvici `na obe strany`.
-- Detailni podminky provedeni jeste nejsou rozepsane.
+- Opora je o `predlokti`.
+- Boky musi zustat `v linii s telem` — telo tvori rovnou desku, zadna tolerance prohybu.
+- Hlava je v `prodlouzeni trupu`.
+- Povolene polohy `volne paze`:
+  - `podél tela`
+  - `vzpazena nahoru`
+  - `za hlavou`
+- Poradi stran: nejprve `cely cas jedna strana`, pak `cely cas druha strana`.
 
 ## Sklapovacky
 
 - Jsou potvrzeny jako trestny cvik.
-- Detailni podminky provedeni jeste nejsou rozepsane.
+- Vychozi poloha: lezi na zadech, nohy rovne, paze za hlavou.
+- Nohy musi zustat `rovne` po celou dobu — pokrceni neni povoleno.
+- Povolene vychozi polohy pazi:
+  - `natazene za hlavou` — ve vrchni fazi musi dojit k `doteku rukou s nohama` (kdekoli od kolen dolu)
+  - `ruce sepjate za hlavou` — ve vrchni fazi musi dojit k `doteku loktů s nohama` (kdekoli na nohach)
+- Opakovani se zapocita jen tehdy, kdyz:
+  - dojde ke spravnemu doteku (dle vychozi polohy pazi)
+  - zak se vrati `lopatkami na zem`
 
 ## Vzdavacky / surrenders
 
 - Jsou potvrzeny jako trestny cvik.
-- Cvik:
-  - `ruce za hlavou`
-  - prechod `ze stoje do kleku a zpet`
-- Detailni podminky provedeni jeste nejsou rozepsane.
+- Ruce jsou `vzdy za hlavou s propletenymi prsty` — poloha je pevna, neni to parametr.
+- Cvik: prechod `ze stoje do kleku a zpet`.
+- Klesani do kleku: kolena jdou `jedno po druhém`, stridate — prvni opak. prave koleno, druhe opak. leve koleno.
+- Vstávání: obraceny postup, jedno koleno po druhém.
+- Záda zustavaji `vzprimena` po celou dobu.
+- Opakovani se zapocita jen tehdy, kdyz:
+  - obe kolena se dotknou zeme
+  - zak se vrati do `plneho vzprimeneho stoje`
 
 ## Kleky ze sedu na patach
 
 - Jsou potvrzeny jako trestny cvik.
-- Cvik:
-  - prechod `ze sedu na patach do vzpr imeneho kleku a zpet`
-- Detailni podminky provedeni jeste nejsou rozepsane.
+- Cvik: prechod `ze sedu na patach do vzprimeneho kleku a zpet`.
+- Vychozi poloha `sed na patach`:
+  - chodidla plochá na zemi, `narty dolu`
+  - zak sedi na patach
+- Cilova poloha `vzprimeny klek`:
+  - kolena ohnutá do `praveho uhlu`
+  - stehna `kolma k zemi`
+- Povolene polohy pazi — stejne jako u `drepu`:
+  - `ruce za hlavou s propletenymi prsty`
+  - `ruce nad hlavou`
+  - `predpazeni`
+  - `upazeni`
+  - `sepjate ruce pred hrudi`
+- Opakovani se zapocita jen tehdy, kdyz:
+  - zak dosahl `vzprimeneho kleku` se spravnym uhlem kolen
+  - zak se vrati do `sedu na patach`
+
+## Limity trestů
+
+### Výprask — limity
+
+- Neexistuje pevný horní limit počtu ran.
+- Limit je definován reakcemi konkrétního žáka.
+- Limit se může lišit podle: nástroje, místa zásahu, pohlaví, výdrže žáka.
+
+### Poziční trest — limity
+
+- Minimum: `5 minut`.
+- Maximum: závisí na povrchu, poloze, pohlaví, výdrži a kázni žáka.
+- Ukázněnější žáci si uvědomují, že si trest zaslouží, a vydrží déle.
+
+### Tělesné cvičení — limity
+
+- Minimum: `10 opakování` nebo `30 sekund`.
+- Maximum: analogicky výprasku a pozičnímu trestu — závisí na výdrži a kázni žáka.
+
+## Kritické projevy nepřiměřenosti
+
+- Platí pro výprask, poziční trest i tělesné cvičení.
+- Kritické projevy:
+  - fyzická neschopnost zaujmout / udržet polohu
+  - silný pláč
+  - prošení
+  - bolestné křičení
+- Reakce NPC autority: trest ukončí, žáka pokárá.
+
+## Kombinační pravidla
+
+- Výprask lze kombinovat s pozičním trestem nebo tělesným cvičením.
+- Kombinace neprobíhá sekvenčně — výprask může přijít uprostřed jiného trestu.
+- Žádné explicitně zakázané kombinace.
+
+## Vizuální a gameplay průběh
+
+### Poziční trest
+
+- Hráč-žák: kamera může rotovat kolem žáka, žák se nesmí pohnout.
+- Hráč-učitel: kamera je standardní, výuka pokračuje normálně.
+  - Více žáků může plnit tresty současně na různých místech.
+  - NPC žáci se hlásí, jsou zkoušeni, mohou se dopouštět přestupků.
+- Hráč-žák vidí odpočítávání zbývající doby, pokud je trest časově omezený.
+- Pokud je trest „dokud neřeknu" — hráč neví, kdy ho učitel pustí.
+- Chyba v poloze: postava se vizuálně mění + reakce autority.
+
+### Tělesné cvičení
+
+- Hráč-žák vidí počítadlo splněných opakování; autorita také reaguje slovně.
+- Ovládání: hráč ovládá cvik klávesnicí; konkrétní systém bude navržen později.
+- Výhledově: možnost napojení na fyzický motion-tracking systém (Kinect) — hráč cvičí v realitě.
+
+### Facka
+
+- Rodič fyzicky udeří žáka rukou přes hlavu.
+- Žák musí čekat s rukama za zády.
+
+### Vytahání za ucho / tahání za vlasy
+
+- Autorita uchopí žáka za ušní lalůček nebo za vlasy u ucha.
+- Žák bolestí nakloní hlavu a je vytažen na špičky nebo stažen do předklonu (náhodně).
+- Opakovaně říká „au", vzlyká, říká že ho to bolí.
+- Pokud musí chodit, frekvence naříkání se zvyšuje.
+
+### Zostání po škole
+
+- Žák může plnit jiný trest (poziční, písemný) nebo musí nečinně sedět v klasické školní poloze.
+- Čas plyne standardně.
 
 ## Pochvaly
 
