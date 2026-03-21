@@ -2,11 +2,8 @@
 
 ## Predmety
 
-- Finalni tabulka predmetu podle rocniku zatim neni uzavrena.
-- Mantinel:
-  - jen historicky dolozene predmety pro ceske zeme kolem `1900`
-  - vychozi obsah ma vychazet z `pruzkumu historickych pramenu`
-  - sprava obsahovych sad ma byt mozna pres `textove soubory` a casem i `UI`
+- Tabulka předmětů je uzavřena — viz `docs/specs/08-subjects.md`.
+- Správa obsahových sad má být možná přes `textové soubory` a časem i `UI`.
 
 ## Typy znamkovanych aktivit
 

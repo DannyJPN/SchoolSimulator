@@ -16,6 +16,7 @@
 | `docs/specs/05-ui-data-and-visibility.md` | UI, viditelnost dat |
 | `docs/specs/06-open-questions.md` | Otevřené otázky čekající na rozhodnutí |
 | `docs/specs/07-npc-characters.md` | Archetypy a vlastnosti NPC postav (rodiče, učitel, spolužáci) |
+| `docs/specs/08-subjects.md` | Předměty, jejich mechaniky a obsah tělocviku |
 
 ## Jak probíhá Q&A specifikace
 

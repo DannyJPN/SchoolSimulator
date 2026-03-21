@@ -29,15 +29,23 @@ Poznamky:
 
 ## Kampan
 
-- Kampan zaka pokryva `1. az 9. rocnik`.
+- Kampaň žáka se skládá ze dvou fází:
+  - **Obecná škola**: `5 ročníků`, věk žáka 6–10 let
+  - **Gymnázium**: `8 ročníků`, věk žáka 11–18 let
+- Celkem `13 ročníků`.
+- Přechod na gymnázium závisí na prospěchu — žák s nedostatečnými výsledky na gymnázium nenastoupí.
+- Nedokončení obecné školy bez přechodu na gymnázium je platný konec hry s nižším hodnocením — není to game over.
+- Žák může na gymnáziu propadnout nebo být vyloučen — tím hra končí předčasně.
+- Gymnázium je jiná škola: jiná budova, jiný učitel, jiné předměty, stejná herní jádro (tresty, pochvaly, úkoly, prospěch).
+- Maturita na konci gymnázia je zvláštní herní událost — vyvrcholení hry.
 - Pokud zak `propadne`, celkova delka kampane se prodluzuje.
 - Dokonceni rocniku funguje jako `checkpoint`.
-- Fyzicka trida zustava stejna, ale `obsah vyuky` se meni podle rocniku.
+- Fyzicka trida zustava stejna v ramci kazde faze, ale `obsah vyuky` se meni podle rocniku.
 - Ve tride je priblizne `20 zaku`.
 - Jde o `jednorocnikovou tridu`, ne o smisenou malotridku.
 - Ve skole je `jeden ucitel`, ktery uci vsechny predmety.
 - Ucitel vede `jen jednu tridu`.
-- Ucitel je po celou dochazku `stejny`.
+- Ucitel je po celou dochazku v ramci kazde faze `stejny`.
 - Spoluzaci zustavaji `stale stejni`, maximalne muze nekdo `propadnout`.
 
 ## Cas a denni rytmus

@@ -5,40 +5,42 @@ Po dokonceni skupiny se stav aktualizuje a commitne.
 
 ## Aktualne rozpracovano
 
-**Skupina: Archetypy rodičů**
-- Soubor: `docs/specs/07-npc-characters.md`
-- Stav: základní archetypy zapsány, otevřené detaily viz fronta
+**Skupina: Předměty — detaily jednotlivých předmětů**
+- Soubor: `docs/specs/08-subjects.md`
+- Stav: základní přehled zapsán; detaily jednotlivých předmětů budou probírány dále
 
 ## Co uz je v teto vlne uzavreno
 
-- `napomenuti`, `poznamka`, `oslova lavice`, `dunce cap`, `hanlivy napis`
-- `zostani po skole`, `pisemny trest`, `trestny ukol`, `verejne doznani`
-- `napsana omluva`, `poslani na chodbu`, `zakaz vychazek`, `zprisneni bedtime`
-- `facka`, `vytahani za ucho`, `tahani za vlasy`, `vedeni za ucho / vlasy`
-- `vyprask` (nástroje, místa, polohy, cyklus, počítání)
-- `pozicni trest` (druhy, polohy paží, podklady, zadání, kontrola)
-- seznam trestných `posilovacích cvičení` + detailní provedení všech cvičení
-- limity trestů, kritické projevy, kombinační pravidla
-- vizuální / gameplay průběh trestů
-- prošení o trest, poděkování, omlouvání
-- průběh nefyzických trestů (písemný trest, trestný úkol, veřejné doznání)
-- oblékání žáka při trestech
-- systém reakcí žáka při trestech
-- `pochvaly`
-- archetypy rodičů (základní sada 6 archetypů)
+- Tresty (fáze 1–3) — kompletní
+- Pochvaly
+- Archetypy rodičů (základní sada)
+- Struktura školy: 5 ročníků obecná škola + 8 ročníků gymnázium + maturita
+- Předměty obecné školy a gymnázia — přehled a mechaniky
+- Tělocvik — kompletní seznam aktivit, her a rituálů hodiny
 
-## Fronta pro archetypy rodičů
+## Fronta — detaily předmětů
 
-- Detaily chování každého archetypu při konkrétních situacích (zatím jen obecný popis)
+Předměty, které je potřeba ještě podrobněji specifikovat:
+1. Náboženství — obsah katechismu po ročnících (obecná škola + gymnázium)
+2. Čeština — typy textů pro diktát, sloh, čtení
+3. Počty / Matematika — typy příkladů po ročnících
+4. Zeměpis — obsah po ročnících
+5. Dějepis — obsah po ročnících
+6. Přírodopis — obsah po ročnících
+7. Fyzika — obsah po ročnících
+8. Latina — rozsah slovní zásoby a gramatiky po ročnících
+9. Němčina — obsah po ročnících
+10. Geometrie — typy úloh po ročnících
 
 ## Dalsi fronta skupin
 
-1. Tabulka předmětů x ročník x pololetí
-2. Etiketa
-3. Balanc
+1. Etiketa
+2. Balanc
+3. Archetypy rodičů — detaily
 
 ## Dokonceno
 
+- Předměty — přehled a mechaniky (2026-03-21) - commit viz níže
 - Pochvaly (2026-03-20) - commit `e45d938`
 - Tresty – fáze 3 (2026-03-20) - commit `4c113b5`
 - Tresty – fáze 2 (2026-03-20) - commit `2ce99e5`
