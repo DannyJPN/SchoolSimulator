@@ -6,58 +6,40 @@ Po dokonceni skupiny se stav aktualizuje a commitne.
 ## Aktualne rozpracovano
 
 **Skupina: Archetypy rodičů**
-- Soubor: TBD
-- Stav: zahájeno
+- Soubor: `docs/specs/07-npc-characters.md`
+- Stav: základní archetypy zapsány, otevřené detaily viz fronta
 
 ## Co uz je v teto vlne uzavreno
 
-- `napomenuti`
-- `poznamka`
-- `oslova lavice`
-- `dunce cap`
-- `hanlivy napis / cedule`
-- `zostani po skole`
-- `pisemny trest`
-- `trestny ukol`
-- `verejne doznani`
-- `napsana omluva`
-- `poslani na chodbu`
-- `zakaz vychazek`
-- `zprisneni bedtime`
-- `facka`
-- `vytahani za ucho`
-- `tahani za vlasy`
-- `vedeni za ucho / vlasy` jako zpusob provedeni
-- `vyprask`
-- `pozicni trest`
-- seznam `poloh pazi` pro pozicni trest
-- `stani`
-- `kleceni`
-- `drep` jako vydrz
-- seznam trestnych `posilovacich cviku`
-- detailni provedeni všech trestných cvičení
-- limity trestů
-- kritické projevy nepřiměřenosti
-- kombinační pravidla
+- `napomenuti`, `poznamka`, `oslova lavice`, `dunce cap`, `hanlivy napis`
+- `zostani po skole`, `pisemny trest`, `trestny ukol`, `verejne doznani`
+- `napsana omluva`, `poslani na chodbu`, `zakaz vychazek`, `zprisneni bedtime`
+- `facka`, `vytahani za ucho`, `tahani za vlasy`, `vedeni za ucho / vlasy`
+- `vyprask` (nástroje, místa, polohy, cyklus, počítání)
+- `pozicni trest` (druhy, polohy paží, podklady, zadání, kontrola)
+- seznam trestných `posilovacích cvičení` + detailní provedení všech cvičení
+- limity trestů, kritické projevy, kombinační pravidla
 - vizuální / gameplay průběh trestů
-- prošení o trest
-- poděkování — protokol
-- omlouvání — protokol
-- průběh nefyzických trestů
+- prošení o trest, poděkování, omlouvání
+- průběh nefyzických trestů (písemný trest, trestný úkol, veřejné doznání)
 - oblékání žáka při trestech
 - systém reakcí žáka při trestech
 - `pochvaly`
+- archetypy rodičů (základní sada 6 archetypů)
+
+## Fronta pro archetypy rodičů
+
+- Detaily chování každého archetypu při konkrétních situacích (zatím jen obecný popis)
 
 ## Dalsi fronta skupin
 
-1. Archetypy rodičů
-2. Tabulka předmětů x ročník x pololetí
-3. Etiketa
-4. Balanc
+1. Tabulka předmětů x ročník x pololetí
+2. Etiketa
+3. Balanc
 
 ## Dokonceno
 
-- Pochvaly (2026-03-20) - commit viz níže
+- Pochvaly (2026-03-20) - commit `e45d938`
 - Tresty – fáze 3 (2026-03-20) - commit `4c113b5`
 - Tresty – fáze 2 (2026-03-20) - commit `2ce99e5`
 - Funkcni doplneni specifikace (2026-03-19) - commit `88f6ad1`
