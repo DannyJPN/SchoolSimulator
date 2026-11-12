@@ -36,6 +36,7 @@ Poznamky:
 
 ## Zpusob vyhodnoceni
 
+- Volne texty (ustni odpovedi, poznamky, sloh, otevrene otazky, odpovedi k textu) hodnoti `jazykovy model` — viz `05-ui-data-and-visibility.md`, sekce AI hodnoceni.
 - Doplnovani ma `jednu spravnou odpoved`.
 - Neni tolerance preklepu.
 - Hrac muze pred odevzdanim mazat a upravovat text, ale odevzda `jen jednou`.

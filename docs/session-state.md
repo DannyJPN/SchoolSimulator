@@ -21,7 +21,7 @@ Po dokonceni skupiny se stav aktualizuje a commitne.
 
 ## Otevřené otázky z revize spec (2026-11-12)
 
-1. Hodnocení volného textu (ústní zkoušení) u NPC učitele
+1. ~~Hodnocení volného textu~~ — uzavřeno (AI hodnocení a vstupy)
 2. Kázeň: převod body ↔ 0–100 % ↔ známka 1–5; vyloučení po jediné pětce?
 3. Podmínka přechodu na gymnázium a pravidla propadnutí
 4. Plynutí času 1:1 vs. délka kampaně (přeskakování prázdných úseků)
@@ -50,7 +50,8 @@ Předměty, které je potřeba ještě podrobněji specifikovat:
 
 ## Dokonceno
 
-- Kampaň učitele — rozsah a konec (2026-11-12)
+- AI hodnocení, vstupy a rukopis (2026-11-12)
+- Kampaň učitele — rozsah a konec (2026-11-12) - commit `550e4e4`
 - Předměty — přehled a mechaniky (2026-03-21) - commit viz níže
 - Pochvaly (2026-03-20) - commit `e45d938`
 - Tresty – fáze 3 (2026-03-20) - commit `4c113b5`

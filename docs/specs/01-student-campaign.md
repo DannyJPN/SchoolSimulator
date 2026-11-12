@@ -106,7 +106,7 @@
 - Poznamky pise hrac `rucne`. Hra nic automaticky nedoplnuje.
 - Zak pozna, zda ma psat poznamky, `sam z kontextu` (bez UI indikace).
 - Obsah tabule `zmizi po skonceni vykladu` — zustane jen to, co si zak zapsal do sesitu.
-- Poznamky se hodnoti `porovnanim s ocekavanym obsahem` (klicova slova / vety z vykladu).
+- Poznamky hodnoti `jazykovy model` podle smyslu a citelnosti — viz `05-ui-data-and-visibility.md`, sekce AI hodnoceni.
 - Ucitel muze poznamky kontrolovat:
   - hrac-ucitel kdykoli
   - NPC ucitel nahodne

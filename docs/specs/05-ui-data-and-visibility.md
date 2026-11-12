@@ -147,3 +147,47 @@ Pevne vlastnosti NPC zaku mohou zahrnovat:
 - tendenci porusovat etiketu
 
 Tyto vlastnosti jsou pro hrace-ucitele zpočatku skryte.
+
+## Vstupy hrace
+
+Obecne pravidlo: hra se ridi tim, co by delal skutecny zak ve skutecne skole.
+
+- Kde by zak `psal rucne`:
+  - podporovan je `graficky tablet`
+  - `mys / touchpad` jako pero
+  - `klavesnice`
+- Kde by zak `mluvil`:
+  - podporovan je `mikrofon` (hrac skutecne mluvi)
+  - nebo `klavesnice` — text se prehraje pres `text-to-speech`
+- Hra musi byt plne hratelna `bez tabletu i bez mikrofonu`.
+
+## Rukopis
+
+- Rukopis se vykresluje `proceduralne z tahu pera`:
+  - kazde pismeno je definovano jako sekvence tahu (vcetne napojeni a ceske diakritiky)
+  - kazde pismeno ma `3–5 variant`
+  - avatar ma `vlastni rukopis` (sklon, velikost, pritlak)
+- Parametry, ktere zhorsuji pismo:
+  - `spech` (rychlost psani vuci zbyvajicimu casu)
+  - `unava`
+  - `tres / bolava ruka`
+  - `opravy`
+- `Backspace` text nemaze — vytvori `preskrtnuti`.
+- Pismo:
+  - `latinkove psaci pismo` — cestina, latina, ostatni predmety
+  - `kurent` — nemcina
+- Neuronova synteza rukopisu je mozne `budouci rozsireni`.
+
+## AI hodnoceni
+
+- Volne texty hodnoti `jazykovy model` podle smyslu:
+  - ustni odpovedi
+  - poznamky v sesite
+  - sloh a otevrene otazky v testech a ukolech
+  - odpovedi na otazky k textu
+- `Doplnovani` se AI nehodnoti — plati jedna spravna odpoved bez tolerance.
+- Model musi podporovat `analyzu obrazu` — hodnoti i `citelnost rukopisu`.
+- Rukopis z tabletu, mysi i klavesnice (vykresleny proceduralne) jde do `stejneho vizualniho hodnoceni`.
+- Model je `konfigurovatelny`:
+  - vychozi je vzdy `maly lokalni model` pritrenovany pro sve ucely
+  - volitelne jiny model (napr. online API)
