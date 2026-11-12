@@ -23,7 +23,17 @@ Po dokonceni skupiny se stav aktualizuje a commitne.
 
 1. ~~Hodnocení volného textu~~ — uzavřeno (AI hodnocení a vstupy)
 2. ~~Kázeň~~ — uzavřeno
-3. Podmínka přechodu na gymnázium a pravidla propadnutí
+3. Podmínka přechodu na gymnázium a pravidla propadnutí — **rozpracováno, čeká na odpověď (otázka 21)**
+   - Historické podklady (ověřit v dobových předpisech): přijetí do primy v 10 letech,
+     obvykle po 4. (někdy 5.) ročníku obecné školy; povinná přijímací zkouška písemná
+     i ústní z náboženství, vyučovacího jazyka a počtů; při dobrém prospěchu na vysvědčení
+     obecné školy a v písemné části mohla být ústní zkouška prominuta; při neúspěchu
+     nový pokus až další školní rok; gymnázium bylo placené (školné).
+   - Varianty k rozhodnutí:
+     a) přijímací zkouška podle historie, neúspěch = konec hry s nižším hodnocením
+     b) jako a), ale s možností opakovat zkoušku po dalším roce na obecné škole
+     c) jako a) + přestup už po 4. ročníku (obecná škola 4 ročníky, celkem 12)
+   - Pak navazuje: pravidla propadnutí (kolik nedostatečných, opravné zkoušky).
 4. Plynutí času 1:1 vs. délka kampaně (přeskakování prázdných úseků)
 5. Jak NPC žáci odpovídají a jak vzniká jejich znalost
 6. Drobné nesoulady a duplicity ve spec
