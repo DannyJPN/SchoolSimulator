@@ -58,7 +58,8 @@ Tento dokument shrnuje body, ktere zatim nejsou definitivne uzavrene a bude potr
 - vahy slozek `zaverecneho hodnoceni ucitele`
 
 - prevod minut zpozdeni na intenzitu trestu
-- prevod kazenskych bodu na navrh znamky z kazne
+- hranice pasem `procenta kazne -> znamka` pro NPC ucitele (prvni verze)
+- vahy kazenskych udalosti (plusove a minusove body)
 - defaultni vahy znamkovanych aktivit
 - pravdepodobnosti:
   - zalovani

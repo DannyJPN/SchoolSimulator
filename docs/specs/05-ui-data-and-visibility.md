@@ -67,7 +67,7 @@ Tridni kniha eviduje:
 - dochazku po hodinach
 - znamky
 - vahy a prumery
-- navrh kazne
+- orientacni procenta kazne
 - napomenuti
 - tresty
 - pochvaly

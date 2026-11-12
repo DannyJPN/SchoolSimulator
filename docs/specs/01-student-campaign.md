@@ -325,6 +325,6 @@
 - Zak muze:
   - `propadnout`
   - byt `vyloucen`
-- `Kazen 5` znamena `vylouceni`.
+- `Kazen 5` na `zaverecnem` vysvedceni znamena `vylouceni` (pololetni 5 je jen varovani).
 - Vylouceni nastava az `po predani vysvedceni`.
 - To je `game over`.

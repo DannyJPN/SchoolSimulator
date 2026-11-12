@@ -92,11 +92,32 @@ Poznamky:
   - historii prohresku
   - historii pochval
   - `skryte kazenske body`
-- Body urcuji navrh znamky z kazne.
 - Hrac-zak body nevidi.
 - Hrac-zak vidi:
   - historii
   - ukazatel kazne v `0-100 %`
+
+## Vypocet a znamka z kazne
+
+- Ukazatel `0-100 %` se pocita ze systemu `plusovych a minusovych bodu`:
+  - minus: prohresky
+  - plus: pochvaly, dobre chovani, priznani
+- Na zacatku `skolniho roku` zacina ukazatel na `100 %`.
+  - prohresky ho snizuji
+  - pochvaly ztratu dorovnavaji, nejvyse zpet na `100 %`
+- Body se `scitaji za cely skolni rok` (obe pololeti).
+- Na zacatku noveho skolniho roku se body `vynuluji`; historie prohresku zustava.
+- Procenta jsou `orientacni` — znamku z kazne dava vzdy `ucitel`:
+  - hrac-ucitel vidi `seznam prohresku` a orientacni procenta, znamku zada `rucne`
+  - NPC ucitel:
+    - cilove reseni: rozhoduje `AI persona` (architektura s tim musi pocitat)
+    - prvni verze: prevod procent pres `pasma`, posunuty `povahou ucitele` (prisny o stupen hur, mirny o stupen lip)
+- Hrac-zak z procent znamku jen odhaduje.
+
+## Vylouceni
+
+- `Kazen 5` na `pololetnim` vysvedceni = `varovani`.
+- `Kazen 5` na `zaverecnem` vysvedceni = `vylouceni`.
 - Kazen se meni:
   - prohresky
   - pochvalami
@@ -120,7 +141,7 @@ Poznamky:
   - tridni knihy
   - historie kazne
 - Nezapisuje se do zakovske knizky.
-- Ovlivnuje navrh znamky z kazne.
+- Ovlivnuje procenta kazne.
 - Mohou ho udelit `ucitel` i `rodice`.
 
 ## Poznamka
@@ -1063,7 +1084,7 @@ Poznamky:
 
 - Znamkovani predmetu je `1-5`.
 - Kazen je take `1-5`.
-- `Kazen 5` = `vylouceni`.
+- `Kazen 5` na `zaverecnem` vysvedceni = `vylouceni` (viz sekce Vylouceni).
 - Na vysvedceni je i `pocet zameskanych hodin`.
 
 ## Dochazka

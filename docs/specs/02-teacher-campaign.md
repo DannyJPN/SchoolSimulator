@@ -177,7 +177,7 @@
   - historii prohresku
   - ulozene tresty
   - pochvaly
-  - navrh znamky z kazne
+  - orientacni procenta kazne
 - Dochazka se vyhodnocuje `automaticky`.
 - Ucitel ji `nemuze rucne opravovat`.
 - Zaznamenava se do ni vsechny tresty udelene ucitelem, i `po skole`.
@@ -197,7 +197,7 @@
 
 ## Kazen
 
-- Hrac-ucitel vidi u zaka `navrh znamky z kazne`, ne skryte body.
+- Hrac-ucitel vidi u zaka `seznam prohresku` a `orientacni procenta kazne`, ne skryte body ani automaticky navrh znamky.
 - Znamku z kazne zadava `rucne`.
 - Stejne tak muze i `nespravedlive pritvrdit`.
 - Nespravedlive tvrde hodnoceni zhorsuje chovani a duveru tridy.
