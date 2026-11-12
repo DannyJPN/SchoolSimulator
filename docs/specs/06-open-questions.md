@@ -49,7 +49,13 @@ Tento dokument shrnuje body, ktere zatim nejsou definitivne uzavrene a bude potr
   - prirucka ucitele
   - obrazovka skolniho radu
 
+## Budouci verze
+
+- `jednotridka` (vice rocniku v jedne mistnosti) jako volba v menu; prvni verze je `rocnikova`
+
 ## Balanc
+
+- vahy slozek `zaverecneho hodnoceni ucitele`
 
 - prevod minut zpozdeni na intenzitu trestu
 - prevod kazenskych bodu na navrh znamky z kazne

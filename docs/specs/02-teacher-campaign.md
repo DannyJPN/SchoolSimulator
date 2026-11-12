@@ -2,6 +2,10 @@
 
 ## Zaklad
 
+- Na zacatku kampane si hrac-ucitel `vybere typ skoly`:
+  - `obecna skola` — `5 rocniku`
+  - `gymnazium` — `8 rocniku`
+- Ucitel vede `stejnou tridu` po cely pocet rocniku zvolene skoly.
 - Ucitel hraje `jednu tridu`.
 - Jde o `vesnickou skolu`.
 - Uci `vsechny predmety` teto tride.
@@ -209,9 +213,30 @@
 - NPC ucitel vybira zaka ke zkouseni na zaklade `kombinace`: nahoda + vysledky + chovani.
 - NPC zaci se `zlepsují v prubehu kampane` v zavislosti na kvalite vyuky.
 
-## Podminka selhani
+## Konec kampane
 
-- Game over pro ucitele nastava, pokud `propadnou vsichni zaci celkove` (ne jen z jednoho predmetu).
+- Hlavnim ukolem ucitele je `ucit` — merítkem uspechu je, ze zaci neprojdou propadnutim.
+- O propadnuti se rozhoduje `na konci rocniku`.
+- Pokud na konci rocniku `propadne kterykoli zak`, kampan konci `neuspechem`.
+- Pokud nikdo nepropadne, kampan pokracuje dalsim rocnikem.
+- Po poslednim rocniku konci kampan `uspechem` a `zaverecnym hodnocenim ucitele`.
+
+## Zaverecne hodnoceni ucitele
+
+- Hra z vysledku spocita `vyslednou znamku / uroven` ucitele.
+- Do hodnoceni vstupuje:
+  - `prospech tridy` (prumer zaverecnych znamek)
+  - `kazen tridy` (prumer znamek z chovani)
+  - `dochazka` (pocet zameskanych hodin)
+  - `prechod na gymnazium` — jen kampan na obecne skole
+  - `vysledky maturity` — jen kampan na gymnaziu
+  - `autorita ucitele` (snizuji ji prilis tvrde a nespravedlive tresty)
+- Vahy jednotlivych slozek patri do skupiny `Balanc`.
+
+## Znamky a kontrola
+
+- Znamky ma ucitel `plne v rukou`.
+- Hra nekontroluje ani netresta nadsazovani znamek.
 
 ## Konfiskace
 
