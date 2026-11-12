@@ -103,15 +103,22 @@ def main() -> None:
             return
         if not inside_repo(cwd):
             ask(f"Zapisující příkaz běží mimo repozitář (cwd: {cwd})")
-        for m in PATH_TOKEN.finditer(cmd):
-            tok = m.group(0)
-            p = normalize(tok, cwd)
-            if not inside_repo(p):
-                ask(f"Příkaz může zapisovat mimo repozitář: {tok}")
-        # cd mimo repo a následný zápis
-        for m in re.finditer(r"\b(?:cd|Set-Location|pushd)\s+(\S+)", cmd, re.IGNORECASE):
-            if not inside_repo(normalize(m.group(1), cwd)):
-                ask(f"Příkaz mění adresář mimo repozitář: {m.group(1)}")
+        # Prochází příkaz po částech a sleduje změny adresáře (cd),
+        # aby se relativní cesty vyhodnocovaly vůči skutečnému cwd.
+        cur = cwd
+        cd_re = re.compile(r"""^\s*(?:cd|Set-Location|pushd)\s+(?:-Path\s+)?("[^"]*"|'[^']*'|\S+)\s*$""", re.IGNORECASE)
+        for seg in re.split(r"&&|\|\||;|\n", cmd):
+            m = cd_re.match(seg)
+            if m:
+                target = normalize(m.group(1), cur)
+                if not inside_repo(target):
+                    ask(f"Příkaz mění adresář mimo repozitář: {m.group(1)}")
+                cur = target
+                continue
+            for pm in PATH_TOKEN.finditer(seg):
+                tok = pm.group(0)
+                if not inside_repo(normalize(tok, cur)):
+                    ask(f"Příkaz může zapisovat mimo repozitář: {tok}")
 
 
 if __name__ == "__main__":
